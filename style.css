@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.container1{
+    display: flex;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+nav:hover{
+    cursor: pointer;
+}
+#logo img{
+    width: 100px;
+    height: 20px;
+    margin-top: 5px;
+}
+#button input{
+    width: 460px;
+    height: 41px;
+}
+.search img{
+    border: 2px solid grey;
+    width: 33px;
+    height: 37px;
+    
+}
+#button{
+    margin-left: 320px;
+}
+.mic img{
+    width: 33px;
+    height: 35px;
+    /* border: 2px solid grey; */
+    border-radius: 100px;
+    margin-left: 23px;
+    padding: 3px;
+    background-color: rgb(240, 240, 240); 
+}
+
+.create img{
+    width: 27px;
+    height: 37px;
+    margin-left: 320px;
+}
+.notification img{
+    width: 22px;
+    height: 24px;
+    margin-top: 6px;
+    margin-left: 17px;
+}
+.avatar1 img{
+    height: 35px;
+    width: 39px;
+    margin-left: 10px;
+}
+/* ------------------------------------------------- */
+
+.container{
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+}
+.tag{
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(22,22,22);
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: rgb(240, 240, 240);
+}
+.light:hover{
+    cursor: pointer;
+    background-color: rgb(202, 202, 202);
+}
+
+/* --------------------------------------- */
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon img{
+    width: 30px;
+    height: 30px;
+    padding: 13px 23px;
+}
+
+.Home img{
+    width: 54px;
+    height: 45px;
+}
+.icon:hover{
+    cursor: pointer;
+    background-color: rgb(202, 202, 202);
+}
+/* -------------------------------- */
+main{
+    min-height: 100vh;
+    background-color: rgb(240, 238, 238);
+}
+.card img{
+    height: 208px;
+    width: 320px;
+}
+.avatar img{
+    height: 35px;
+    width: 39px;
+}
+.dots img{
+    height: 35px;
+    width: 39px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+.card{
+    padding: 10px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    transition-property: all;
+    transition-duration: 10s;
+    transition-timing-function: ease-in-out;
+}
+.card img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.avatar-content{
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.channel-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content-status{
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+}
+
+@media only screen and (max-width:500px){
+    #logo img {
+        width: 62px;
+        height: 15px;
+        margin-top: 9px;
+        margin-left: 5px;
+    }
+    aside {
+        display: none;
+    }
+    #button {
+        margin-left: 14px;
+    }
+    #button input {
+        width: 145px;
+        height: 34px;
+    }
+    .search img {
+        border: 2px solid grey;
+        width: 28px;
+        height: 30px;
+    }
+    .mic img {
+        width: 20px;
+    height: 23px;
+    /* border: 2px solid grey; */
+    border-radius: 100px;
+    margin-left: 4px;
+    padding: 3px;
+    background-color: rgb(240, 240, 240);
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    }
+    .content h3{
+        font-size: 12px;
+    }
+    .content p{
+        font-size: 11px;
+    }
+    .card .thumb{
+        height: 190px;
+        width: 272px;
+    }
+    .container {
+        display: flex;
+        gap: 12px;
+        padding: 7px 6px;
+    }
+    .tag {
+        height: 22px;
+        padding: 3px 10px;
+        border-radius: 20px;
+        border: 1px solid rgb(22,22,22);
+    }
+}
+@media only screen and (min-width:415px) and (max-width:821px){
+    #box-2{
+        background-color: rgb(0, 153, 255);
+        display: block;
+    }
+}
+
+
+
